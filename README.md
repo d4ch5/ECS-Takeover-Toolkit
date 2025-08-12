@@ -43,7 +43,7 @@ os = requests.get(url +"/?" + input_id(url) + "=" + param_os_url)
 ````
 Change to:
 ````python
-os = requests.get(url +"/?" + input_id(url) + "=" + param_os_url, proxy=proxy)
+os = requests.get(url +"/?" + input_id(url) + "=" + param_os_url, proxies=proxies)
 ````
 
 The tool will:
