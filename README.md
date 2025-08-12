@@ -38,11 +38,13 @@ You can enable proxy settings in the code if you want to debug the requests.
 Decomment the "proxies" variable at the beginning an enable proxy where you need it like:
 
 Example:
+````python
 os = requests.get(url +"/?" + input_id(url) + "=" + param_os_url)
-
+````
 Change to:
+````python
 os = requests.get(url +"/?" + input_id(url) + "=" + param_os_url, proxy=proxy)
-
+````
 
 The tool will:
 Enumerate running Docker containers on the target
